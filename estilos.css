@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Afacad Flux' ;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+/* Primer archivo: 01-eclipse-fixed */
+
+.fixed{
+    height: 48px;
+    width: 48px;
+    background-color: #c8ab2a;
+    position: fixed;
+    top: 92vh;
+    right: 15px;
+    z-index: 100;
+    border-radius: 50%;
+}
+
+.eclipse{
+    height: 42px;
+    width: 42px;
+    background-color: #333333e6;
+    filter: drop-shadow(0 0 0.4rem #c8ab2a);
+    position: fixed;
+    top: 92vh;
+    right: 20px;
+    z-index: 100;
+    border-radius: 50%;
+}
+
+/* Segundo archivo: 02-bg-inicio */
+
+.bg_inicio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('fondo-cover.jpg');
+    background-size: cover;
+    height: 100vh;
+}
+.bg_inicio h1{
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 85px;
+}
+
+/* Tercer archivo: 03-menu-sticky */
+
+header{
+    position: sticky;
+    top: 0px;
+    z-index: 5;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #333333;
+    padding: 15px 85px 15px 50px ;
+}
+header .logo{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 4px solid #ffffff;
+}
+
+header nav > ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    /*color: #ffffff;*/
+
+}
+
+ul li{
+    padding: 10px 0px 0px 30px;
+}
+
+ul li > a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+li:not(:last-child):after{
+    padding-left: 25px;
+    content: '|';
+    font-size: 1.2em;
+}
+
+/* Cuarto archivo: 04-product-single */
+
+.card{
+    margin-top: 10%;
+    background-image: radial-gradient(circle at bottom left, #d0e8f6, #769eed );
+    max-width: 330px;
+    border-radius: 6px 6px 6px 6px;
+    filter: drop-shadow(lightgrey 0px 12px 6px);
+}
+.card div img{
+    width: 100%;
+    border-radius: 6px 6px 0px 0px;
+}
+
+.card_content{
+    padding: 4%;    
+}
+
+button.btn.card_btn{
+    color: #ffffff;
+    background-color: transparent;
+    width: 100%;
+    margin-top: 5%;
+    padding: 12px;
+    text-transform: uppercase;
+    border: 1px solid #ffffff80;
+    border-radius: 6px;
+}
+
+/* Quinto archivo: 05-product-all */
+
+.main > h1{
+    color: #000000;
+    font-family: 'Pacifico', cursive;
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 5%;
+}
+
+.cards{
+    max-width: 1200px;
+    margin: auto;
+    padding-bottom: 5%;
+    display: grid;
+    list-style: none;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+}
+
+
+/* Sexto archivo: 06-imagen-absolute */
+.intro{
+    position: relative;
+}
+
+.intro img{
+     width: 100%;
+}
+
+.intro p{
+    position: absolute;
+    top: 62%;
+    left: 40%;
+    padding: 40px 80px;
+    background-color: #00000060;
+    font-size: 3rem;
+    border-radius: 20px;
+}
+
+/* Séptimo archivo: 07-footer */
+
+footer{
+    position: sticky;
+    bottom: 0;
+    z-index: -1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #000000;
+    color: #a9a9a9ba;
+}
+
+.iconos::before{
+    font-family: 'Material Symbols Outlined';
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 300,
+        'GRAD' 0,
+        'opsz' 24;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    padding: 25% 0% 15%;
+}
+
+.home::before{
+    content: '\e88a';
+
+}
+
+.bolt::before{
+    content: '\ea0b';
+}
+
+.key::before{
+    content: '\e73c'; 
+}
+
+.rocket::before{
+    content: '\eb9b'; 
+}
+
+footer p{
+    padding: 25% 0%;
+    margin-bottom: 20%;
+    border-top: 1px solid ;
+}
